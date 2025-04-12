@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto',arial;
+    background-color: #f2f3f4;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerLogo {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://images.seeklogo.com/logo-png/14/1/umbrella-corporation-residentevil-logo-png_seeklogo-144673.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 8px 30px 8px 30px;
+}
+
+#bannerImg {
+    width: 1436px;
+    height: 578px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(http://www.c4charitycars.com/uploads/1/2/9/3/12932633/546638-302546883171723-1829953089-n_1.jpg);
+}
+
+.section-content {
+    text-align: center;
+}
+
+#introVid {
+    display: flex;
+    justify-content: center;
+}
+
+#messageSection span {
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 5%;
+}
+
+footer{
+    text-align: right;
+}
