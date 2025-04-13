@@ -15,20 +15,31 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 nav>a {
     text-decoration: none;
     color: black;
     border: 1px solid;
+    font-weight: bold;
     padding: 8px 30px 8px 30px;
+}
+h1,h2,h3,p,ul {
+    margin-left: 230px;
+    margin-right: 230px;
+    text-align: justify;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
 }
 
 #bannerImg {
@@ -37,13 +48,9 @@ nav>a {
     background-size: cover;
     background-position: bottom;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    outline: solid;
+    outline-color: crimson;
     background-image: url(http://www.c4charitycars.com/uploads/1/2/9/3/12932633/546638-302546883171723-1829953089-n_1.jpg);
-}
-
-.section-content {
-    text-align: center;
 }
 
 #introVid {
@@ -51,12 +58,46 @@ nav>a {
     justify-content: center;
 }
 
-#messageSection span {
-	margin-bottom: 10px;
+.message-section span {
+	margin-bottom: 15px;
 	display: inline-block;
-	width: 5%;
+    vertical-align: top;
+	width: 7%;
+}
+
+#name {
+    margin-left: 230px;
+}
+
+#nameBar {
+    width: 300px;
+    height: 17px;
+}
+
+#dateBar {
+    width: 302px;
+    height: 20px;
+    
+}
+
+.message-section textarea {
+    width: 300px;
+    height: 50px;
+}
+
+#messageButton {
+    display: flex;
+    margin-right: 956px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+}
+
+.m-button {
+    padding: 10px 50px 10px 50px;
 }
 
 footer{
     text-align: right;
+    margin: 20px 70px 20px 0px;
 }
