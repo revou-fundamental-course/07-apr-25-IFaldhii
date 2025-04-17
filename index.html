@@ -13,10 +13,10 @@
             <div id="headerLogo"></div>
             
             <nav>
-                <a href="homeSection">Home</a>
-                <a href="profileSection">Our Profile</a>
-                <a href="portfolioSection">Portfolio</a>
-                <a href="messageSection">Message Us</a>
+                <a href="#homeSection">Home</a>
+                <a href="#profileSection">Our Profile</a>
+                <a href="#portfolioSection">Portfolio</a>
+                <a href="#messageSection">Message Us</a>
             </nav>
         </header>
 
@@ -25,11 +25,15 @@
         <main>
             <section id="homeSection">
                 <article>
-                    <h1>Hi_, Welcome to Umbrella Pharmaceuticals</h1>
+                    <h1>Hi <span id="visitorName">_</span>, Welcome to Umbrella Pharmaceuticals</h1>
                     <p>— your <em>definitely-not-sinister</em> partner in health, science, and occasional global incidents.</p>
                 </article>
                 
-                <div class="banner"><span id="bannerImg"></span></div>
+                <div class="banner">
+                    <span class="banner-img banner-1"></span>
+                    <span class="banner-img banner-2"></span>
+                    <span class="banner-img banner-3"></span>
+                </div>
             </section>
 
             <section id="profileSection">
@@ -63,7 +67,7 @@
 
             <section id="portfolioSection">
                 <div id="introVid">
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/5FZZy0o4NhY?start=7&controls=0&playlist=5FZZy0o4NhY&loop=1"></iframe>
+                    <iframe class="responsive-introvid" src="https://www.youtube.com/embed/5FZZy0o4NhY?start=7&controls=0&playlist=5FZZy0o4NhY&loop=1"></iframe>
                 </div>
                 
                 <article>
@@ -95,23 +99,34 @@
 
             <hr />
 
-            <section class="message-section">
+            <section id="messageSection">
                 <h2>Message Us</h2>
-                <form>
-                    <div id="name"><span>Name</span><span>:</span>
-                    <input id="nameBar" type="text" placeholder="Ex. John Doe">
-                    <div id="dob"><span>Date of Birth</span><span>:</span>
-                    <input id="dateBar" type="date">
-                    <div id="gender"><span>Gender</span><span>:</span>
-                    <input type="radio" name="gender">Male
-                    <input type="radio" name="gender">Female
-                    <div id="message"><span>Message</span><span>:</span>
-                    <textarea placeholder="Type here."></textarea><br />
-                    <div id="messageButton">
-                        <input class="m-button" type="submit">
-                        <input class="m-button" type="reset">
+                <div id="messageLayout">
+                    <form id="formLayout">
+                        <label id="name"><span>Name</span><span>:</span>
+                            <input id="nameBar" type="text" placeholder="Ex. John Doe" required>
+                        </label>
+                        <label id="dob"><span>Date of Birth</span><span>:</span>
+                            <input id="dateBar" type="date" required>
+                        </label>
+                        <div id="gender"><span>Gender</span><span>:</span>
+                            <label><input type="radio" name="gender" value="Male" required>Male</label>
+                            <label><input type="radio" name="gender" value="Female" required>Female</label>
+                        </div>
+                        <label id="message"><span>Message</span><span>:</span>
+                            <textarea id="messageBar" placeholder="Type here." required></textarea>
+                        </label>
+                        <button class="m-button" type="submit">Submit</button>
+                    </form>
+    
+                    <div id="finalResult" class="final-result">
+                        <p><strong>Current time</strong> : <span id="time"></span></p>
+                        <p><strong>Name</strong> : <span id="nameResult">-</span></p>
+                        <p><strong>Date of Birth</strong> : <span id="dobResult">-</span></p>
+                        <p><strong>Gender</strong> : <span id="genderResult">-</span></p>
+                        <p><strong>Message</strong> : <span id="messageResult">-</span></p>
                     </div>
-                </form>
+                </div>
             </section>
         </main>
 

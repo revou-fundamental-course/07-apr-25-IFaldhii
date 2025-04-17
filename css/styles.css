@@ -31,73 +31,142 @@ nav>a {
     font-weight: bold;
     padding: 8px 30px 8px 30px;
 }
-h1,h2,h3,p,ul {
-    margin-left: 230px;
-    margin-right: 230px;
-    text-align: justify;
-}
 
 .banner {
     display: flex;
     justify-content: center;
 }
 
-#bannerImg {
-    width: 1436px;
-    height: 578px;
-    background-size: cover;
-    background-position: bottom;
+.banner-img {
+    width: 75%;
+    height: 55vh;
+    background-size: 100% 100%;
     display: flex;
     outline: solid;
     outline-color: crimson;
+}
+
+.banner-1 {
     background-image: url(http://www.c4charitycars.com/uploads/1/2/9/3/12932633/546638-302546883171723-1829953089-n_1.jpg);
 }
 
+.banner-2 {
+    background-image: url(https://ae01.alicdn.com/kf/Sbbe577d37bc3488e99d5604af345f2440.jpg);
+}
+
+.banner-3 {
+    background-image: url(https://i.pinimg.com/736x/83/14/7c/83147c86cc8276d17f4c819b83afcf47.jpg);
+}
+
 #introVid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 40%;
+}
+
+.responsive-introvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#messageLayout {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
-.message-section span {
-	margin-bottom: 15px;
-	display: inline-block;
+#formLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-width: 500px;
+}
+
+#formLayout label,p {
+    margin-bottom: 20px;
+}
+
+input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+#formLayout span {
     vertical-align: top;
-	width: 7%;
-}
-
-#name {
-    margin-left: 230px;
-}
-
-#nameBar {
-    width: 300px;
-    height: 17px;
+    display: inline-block;
+    width: 20%;
 }
 
 #dateBar {
-    width: 302px;
-    height: 20px;
-    
-}
-
-.message-section textarea {
-    width: 300px;
-    height: 50px;
-}
-
-#messageButton {
-    display: flex;
-    margin-right: 956px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    justify-content: space-evenly;
+    width: 42%;
 }
 
 .m-button {
-    padding: 10px 50px 10px 50px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.m-button:hover {
+    background-color: #0056b3;
+  }
+
+#finalResult {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 500px;
 }
 
 footer{
     text-align: right;
     margin: 20px 70px 20px 0px;
+}
+
+@media only screen and (max-width: 724px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav>a {
+        padding: 4px 10px 4px 10px;
+    }
+
+    #headerLogo {
+        margin-left: 0px;
+    }
+    
+    nav {
+        margin-right: 0px;
+    }
 }
